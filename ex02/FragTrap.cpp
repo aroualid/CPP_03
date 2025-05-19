@@ -33,5 +33,11 @@ FragTrap& FragTrap::operator=(FragTrap const & src)
 void FragTrap::highFivesGuys()
 {
 	if (energy_points > 0)
-	P	
+	{
+		energy_points -= 1;
+		std::cout << "FragTrap " << name << " high fives guys\n";
+		return ;
+	}
+	std::cout << "Not enough energy_points, energy points is : " << energy_points << "\n";
 }
+
