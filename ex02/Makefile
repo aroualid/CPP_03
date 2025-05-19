@@ -3,7 +3,7 @@ CXX = c++
 CXXFLAGS=  -Wall -Wextra -Werror -g3 -std=c++98 -MMD
 
 OBJ_PATH = obj/
-SRC = ClapTrap.cpp  main.cpp ScavTrap.cpp
+SRC = ClapTrap.cpp  main.cpp ScavTrap.cpp FragTrap.cpp
 OBJ_NAME = $(SRC:.cpp=.o)
 OBJ = $(addprefix $(OBJ_PATH), $(OBJ_NAME))
 
